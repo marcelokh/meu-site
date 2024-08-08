@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcelo 2 info 1</title>
+    <style>
+        body {
+          background: url(Motocross.jpeg);
+          background-size: cover;/* Garante que a imagem cubra toda a area disponivel */
+          background-position: center;/* Centraliza imagem no fundo */
+          background-repeat: no-repeat;/* evita a repeticão da imagem */
+            font-family: Arial,sans-serif;
+            text-align: center;
+            margin: 300px;
+            color: rgb(222, 222, 222);
+          }
+        #nomeInput {
+            padding: 10px;
+            font-size: 16px;
+          }
+          #exibirNome {
+             margin-top: 20px;
+             font-size: 16px;
+             color: green;
+            }
+            button {
+              margin-top: 10px;
+              padding: 10px 20px;
+              font-size: 16px;
+              cursor: pointer;
+              background-color: rgb(0, 0, 0);
+              color: aliceblue;
+              border: nome;
+              border-radius: 5px;
+              transition: background-color 0.3s esse, transform 0.2s e;
+            }
+          button:hover {
+            background-color: dodgerblue;
+            transform: scale(1.05);
+          }
+    </style>
+</head>
+<body>
+   <h1>marcelo</h1>
+  <h3>Escola Professor Pedro Saturnino de Magualhães</h3>
+    <h3>programacao web 2 info 1</h3>
+  <h2>Digite seu nome</h2>
+  <input type="text"id="nomeInput" placeholder="Seu nome">
+  <button onclick="exibirNome()"exibir Nome></button>
+  <div id="exibirNome"></div>
+<script>
+  // Definido a funcão "exibirNome"
+  function exibirNome () {
+    var nome = document.getElementById("nomeInput").veleu;
+    //obtendo o valor dijitado na caixa de texto com ID "nomeInput"
+    var mensagem = "olá, " + nome + "!";
+    //Criando uma mensagem de saudacão com nome obtido
+    document.getElementById("exibirNome").innerText = mensagem;
+    //Exibindo a mensagem na area com o ID "exibirNome"
+    
+  }
